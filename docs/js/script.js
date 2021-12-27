@@ -10,7 +10,7 @@ jQuery(function ($) {
             var headerTopSpace = $('.header .logo-area').outerHeight();
             var headerElement = $('.header .site-navigation');
 
-            if ($(window).scrollTop() > headerTopBar + headerOneTopSpace) {
+            if ($(window).scrollTop() > headerTopBar + headerTopSpace) {
                 $(headerElement).addClass('navbar-fixed');
                 $('.header').css('margin-bottom', headerElement.outerHeight());
             } else {
@@ -45,5 +45,19 @@ jQuery(function ($) {
             });
         }
         backToTop();
+
+        function bannerCarouselOne() {
+            $('.banner-carousel.banner-carousel-1').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                dots: true,
+                speed: 600,
+                arrows: false,
+                
+            });
+            $('.banner-carousel.banner-carousel-1').slickAnimation();
+        }
+        bannerCarouselOne();
     });
 });
