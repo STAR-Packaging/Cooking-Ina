@@ -1,6 +1,6 @@
 html, body {
-    width: auto;
-    height: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 .imageblock {
@@ -29,12 +29,14 @@ img {
 }
 
 .navbar {
+    overflow: hidden;
     background-color: black;
     color: white;
-    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5%;
     font-size: 8px;
     border: none;
-    align-items: justify;
+    max-height: 100px;
 }
 
 .navitem {
