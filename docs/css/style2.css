@@ -29,7 +29,6 @@ img {
 }
 
 .navbar {
-    float: left;
     overflow: hidden;
     background-color: black;
     color: white;
@@ -46,7 +45,7 @@ img {
     padding: 8px;
     font-size: 30px;
     border: none;
-    display:inline-block;
+    display:flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
