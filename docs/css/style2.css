@@ -3,8 +3,61 @@ html, body {
     padding: 0px;
 }
 
+nav {
+    width: 100%;
+    background: #000;
+}
+ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+}
+ul li:hover {
+    background: rgb(182, 22, 22);
+    color:blanchedalmond;
+    font-weight:bold;
+    text-emphasis-color: white;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: black;
+    text-align:right;
+    box-sizing:border-box;
+    color:#fff;
+    font-size:30px;
+    display:none;
+}
+@media(max-width:575px){
+    .toggle{
+        display:block;
+    }
+    ul{
+        width:100%;
+        display:none;
+    }
+    ul li{
+        display:block;
+        text-align:center;
+    }
+    .active{
+        display:block;
+    }
+}
+
 .imageblock {
-    width: 500px;
+    width: 46%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -23,9 +76,11 @@ img {
     height: auto;
 }
 
-.site-navigation .container {
-    background-color: black;
-    max-width: relative;
+@media(max-width:575px){
+    img{
+        width:369px;
+        height:139px;
+    }
 }
 
 .navbar {
@@ -37,6 +92,8 @@ img {
     font-size: 8px;
     border: none;
     max-height: 100px;
+    position: relative;
+    display: flex;
 }
 
 .navitem {
@@ -68,45 +125,4 @@ img {
     background-color:white;
     font-weight: bolder;
     color:black;
-}
-
-.dropbutton {
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(243,70,70);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbutton {
-    background-color: #82828f;
 }
