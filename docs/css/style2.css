@@ -29,6 +29,7 @@ img {
 }
 
 .navbar {
+    float: left;
     overflow: hidden;
     background-color: black;
     color: white;
