@@ -109,8 +109,8 @@ ul li a{
 }
 
 .brandcontent .brandimg img{
-    width: 28%;
-    height: 40%;
+    width: 30%;
+    height: auto;
     float: left;
 }
 
@@ -124,15 +124,16 @@ ul li a{
 
 @media(max-width:575px){
     .brandcontent .brandimg img{
-        width: 40%;
+        width: 45%;
         height: 400px;
-        float:left;
+        float: left;
+        max-width: 100%;
     }
     .brandcontent .brandvariants {
         color: black;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size:smaller;
-        float:center;
+        float:right;
         text-align:left;
         margin: 0px;
         padding: 0px;
@@ -153,14 +154,14 @@ ul li a{
 
 @media(max-width:575px){
     .mapcontent .mapbox {
-        width:500px;
-        height:auto;
+        width: 500px;
+        height: auto;
     }
     iframe {
         width: 90%;
         height: 500px;
         overflow: auto;
-        max-width:100%;
+        max-width: 100%;
     }
 }
 
