@@ -157,9 +157,10 @@ ul li a{
         height:auto;
     }
     iframe {
-        width: 100%;
+        width: 90%;
         height: 500px;
         overflow: auto;
+        max-width:100%;
     }
 }
 
